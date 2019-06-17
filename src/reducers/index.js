@@ -14,12 +14,14 @@ const counterReducer = (state = initialState, action) => {
     case INCREMENT:
     // Fill in the body of this case
     return {
-      count: state.count + action.payload,
+      // count: state.count + action.payload,
+      count: ++state.count,
     }
     case DECREMENT:
     // Fill in the body of this case
     return {
-      count: state.count - action.payload,
+      //count: state.count - action.payload,
+      count: --state.count,
     }
     default:
       return state;
