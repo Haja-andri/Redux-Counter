@@ -3,10 +3,6 @@ import { connect } from 'react-redux';
 import { increment, decrement } from '../actions';
 
 class Counter extends Component {
-sate = {
-    numberToIncrease : 3,
-    numberToDecrease : 1,
-}
 
     incrementIfOdd = () => {
         // Stretch Problem: Implement an increment function that
@@ -25,10 +21,10 @@ sate = {
         return (
             <p>
                 Clicked: {this.props.count} times
-                <button onClick={() => {this.props.increment(this.state.numberToIncrease)}}>
+                <button onClick={() => {this.props.increment(4)}}>
                     +
                 </button>
-                <button onClick={() => {this.props.decrement(this.state.numberToIncrease)}}>
+                <button onClick={() => {this.props.decrement(2)}}>
                     -
                 </button>
                  {/* Uncomment these button tags if you got
