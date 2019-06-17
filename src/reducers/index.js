@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT, increment, decrement } from '../actions';
+import { INCREMENT, DECREMENT } from '../actions';
 
 const initialState = {
   count: 20
